@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- a 태그 : 가른 페이지나 위치로 이동하는 하이퍼링크를 생성하는 태그, herf : 이동할 페이지의 주소, rel="noopener" : 새탭에서 열린 페이지가 원래 페이지에 접근하는 것을 방지 -->
+    <h2>외부링크</h2>
+    <a href="https://www.google.com">구글 이동</a> <br />
+    <!-- 기존탭에서 이동함-->
+
+    <a href="https://www.google.com" target="_blank" rel="noopener"
+      >새탭으로 구글 이동</a
+    >
+    <!-- 새탭에서 이동함 -->
+    <h2>내부 링크</h2>
+    <ul>
+      <li><a href="./02-text-tag.html">(텍스트연습페이지)</a></li>
+      <li><a href="./03-list-tag.html">(리스트연습페이지)</a></li>
+      <li><a href="./04-image-media.html">(이미지연습페이지)</a></li>
+    </ul>
+
+    <h2>이미지 링크</h2>
+    <a href="https://www.mega-mgccoffee.com/" target="_blank" rel="noopener">
+      <img
+        src="https://img.79plus.co.kr/megahp/common/img/new_logo_b.png"
+        alt="람보들"
+        width="200"
+      />
+    </a>
+
+    <h2>페이지 안에서 이동</h2>
+    <!-- ul>(li>a)*3 id : 고유값(이름부여) 선택할시 #으로 시작 -->
+    <ul>
+      <li><a href="#section1">섹션1로 이동</a></li>
+      <li><a href="#section2">섹션2로 이동</a></li>
+      <li><a href="#section3">섹션3으로 이동</a></li>
+    </ul>
+
+    <h3 id="section1">섹션1</h3>
+    <p>이곳은 섹션1입니다.</p>
+
+    <div style="height: 600px"></div>
+
+    <h3 id="section2">섹션2</h3>
+    <p>이곳은 섹션2입니다.</p>
+
+    <div style="height: 600px"></div>
+
+    <h3 id="section3">섹션3</h3>
+    <p>이곳은 섹션3입니다.</p>
+
+    <div style="height: 600px"></div>
+    <a href="#">위로이동</a>
+  </body>
+</html>

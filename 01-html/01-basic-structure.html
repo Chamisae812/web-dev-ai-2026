@@ -1,0 +1,29 @@
+<!--
+HTML(Hyper Text Markup Language) : 구조/내용
+<태그 속성="값">내용</태그>
+<태그 속성1="값1" 속성2="값2"/> : 빈 태그(자기 닫는 태그)
+-->
+<!DOCTYPE html><!-- 현제 문서가 html5 언어로 작성된 웹문서 -->
+<html lang="ko"><!-- 웹문서의 시작과 끝 - 문서 기본언어 지정 (ko / en) -->
+<head><!-- 웹문서의 정보 -->
+    <title>문서의 제목이에요</title><!-- 웹문서 제목(브랜드, 핵심 키워드 등) -->
+    <meta name="description" content="문서에 대한 설명을 작성합니다."><!-- 웹문서에 대한 간단한 설명 -->
+    <meta name="author" content="홍길동"><!-- 웹문서 작성자 -->
+    <meta charset="UTF-8"/><!-- 문자 인코딩 방식 지정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/><!-- 반응형 웹을 위한 뷰포트 설정(모바일 화면에 맞게 렌더링) -->
+<!--
+- width=device-width : 뷰포트의 너비를 기기의 실제 너비로 설정합니다. 
+- initial-scale=1.0 : 초기 확대/축소 비율을 1:1로 설정합니다.
+- viewport-fit=cover :  노치까지 포함하여 전체 화면을 사용하도록 설정합니다.
+-->
+    <!-- Open Graph(공유카드) : SNS 공유 시 표시될 정보 설정 -->
+    <meta property="og:title" content="문서의 제목이에요"/><!-- SNS 공유 시 표시될 제목 -->
+    <meta property="og:description" content="문서에 대한 설명을 작성합니다." /><!-- SNS 공유 시 표시될 설명 -->
+    <meta property="og:url" content="https://www.example.com"/><!-- SNS 공유 시 표시될 URL -->
+    <meta property="og:image" content="https://www.example.com/image.jpg"/><!-- SNS 공유 시 표시될 이미지 -->
+</head>
+<body>
+    <!-- 실제 웹브라우저에 표시되는 내용 -->
+     안녕하세요!
+</body>
+</html>
