@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>기본 표</h2>
+    <table border="1">
+      <tr>
+        <th>브라우저</th>
+        <th>제조사</th>
+      </tr>
+      <tr>
+        <td>Chrome</td>
+        <td>Google</td>
+      </tr>
+      <tr>
+        <td>Edge</td>
+        <td>Microsoft</td>
+      </tr>
+    </table>
+
+    <h2>행/열 합치기</h2>
+    <!-- rowspan : 행(위아래) 합치기, colspan : 열(좌우) 합치기 -->
+    <table border="1">
+      <tr>
+        <th rowspan="2">이름</th>
+        <td>루이바오</td>
+      </tr>
+      <tr>
+        <td>후이바오</td>
+      </tr>
+      <tr>
+        <th colspan="2">주소</th>
+      </tr>
+      <tr>
+        <td colspan="2">경기도 용인 에버랜드</td>
+      </tr>
+    </table>
+
+    <h2>테이블 구조(구역)</h2>
+    <!-- thead : 표의 머리글(헤더) 영역, tbody : 표의 본문 영역, tfoot : 표의 꼬리글(풋터) 영역, caption : 표의 제목 -->
+    <table border="1">
+      <caption>
+        바오 패밀리 친구들
+      </caption>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>주소</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>코식이</td>
+          <td>36</td>
+          <td>경기도 용인</td>
+        </tr>
+        <tr>
+          <td>제돌이</td>
+          <td>19</td>
+          <td>제주도</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">총 마리 수</th>
+          <td>2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
