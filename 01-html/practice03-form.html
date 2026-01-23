@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>주문하기</h1>
+    <form action="">
+      고객명
+      <input
+        type="text"
+        name="customer_name"
+        placeholder="이름을 입력하세요"
+        required
+      /><br />
+      연락처
+      <input
+        type="text"
+        name="phone_number"
+        placeholder="010-1234-5678"
+        required
+      /><br />
+      이메일
+      <input
+        type="email"
+        name="email"
+        placeholder="이메일을 입력하세요"
+        required
+      /><br />
+    </form>
+    <form action="">
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <label
+          ><input
+            type="radio"
+            name="menu"
+            value="Small"
+            id="Small"
+          />Small</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="menu"
+            value="Medium"
+            id="Medium"
+          />Medium</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="menu"
+            value="Large"
+            id="Large"
+          />Large</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>토핑 선택</legend>
+        <label
+          ><input
+            type="checkbox"
+            name="topping"
+            value="Bacon"
+            id="Bacon"
+          />Bacon</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="topping"
+            value="Cheese"
+            id="Cheese"
+          />Cheese</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="topping"
+            value="Onions"
+            id="Onions"
+          />Onions</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="topping"
+            value="Mushrooms"
+            id="Mushrooms"
+          />Mushrooms</label
+        >
+      </fieldset>
+      <form action="">
+        희망시간 <input type="time" name="time" required /><br />
+        <br />
+        <br />
+        배송 시 요청사항
+        <textarea
+          name="request"
+          id="request"
+          placeholder="내용을 입력하세요"
+        ></textarea
+        ><br />
+        <button type="submit">주문하기</button>
+      </form>
+    </form>
+  </body>
+</html>
