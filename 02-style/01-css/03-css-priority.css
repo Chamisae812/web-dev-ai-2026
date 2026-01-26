@@ -1,0 +1,47 @@
+.rule-test h2 {
+  color: red;
+}
+/* 같은 선택자, 나중 규칙이 이김 */
+.rule-test h2 {
+  color: blue;
+}
+
+/* 선택자 우선순위 : !important(가급적으로 사용금지) > inline > ID > Class > Tag */
+
+.box {
+  background: purple !important;
+  color: white !important;
+}
+#priority {
+  background: yellow;
+  color: green;
+}
+
+/* :is, :where 우선순위 테스트 */
+/* is는 안의 선택자 중 가장 높은 점수를 가져옴 */
+:is(.is-where) {
+  background: teal;
+  color: white;
+}
+/* is는 선택자 우선순위를 계산함(ID, 클래스/속성, 태그/가상요소) */
+:where(.is-where) {
+  background: pink;
+}
+/* where은 항상 점수가 0점이다 보니 처음 초기 세팅 */
+
+/* CSS 변수 테스트 */
+/* (1)root에 기본 테마변수 정의
+(2) 페이지 내부에서 필요한 값만 재정의 ->라이트/다크 모드 등 테마 변경에 용이 */
+:root {
+  --primary: blue;
+  --bg: lightgray;
+}
+.theme {
+  background: var(--bg);
+  color: var(--primary);
+}
+.dark {
+  --primary: white;
+  --bg: black;
+}
+/* 한번에 바꿀 수 있다 */

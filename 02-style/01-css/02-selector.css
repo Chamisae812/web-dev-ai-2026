@@ -1,0 +1,100 @@
+/* 01. 전체 선택자 */
+* {
+  color: blue;
+}
+/* 02. 태그 선택자 */
+p {
+  color: red;
+}
+/* 03. 클래스 선택자 */
+.notice {
+  background: yellow;
+}
+/* 04. 아이디 선택자 */
+#only-one {
+  background: lime;
+}
+/* 05. 그룹 선택자 */
+.group-a,
+.group-b {
+  background: orange;
+}
+/* 06. 조합 선택자 */
+/* 자식 선택자와 자손 선택자 */
+.combo p {
+  color: red;
+}
+.combo > p {
+  background: blue;
+}
+.combo div p {
+  color: green;
+}
+
+/* 형제 선택자
++ : 바로 다음 형제 요소 선택자, ~ : 뒤에 있는 모든 형제 요소 선택자
+*/
+#sib + .sib {
+  background: cyan;
+}
+#sib ~ .sib {
+  color: brown;
+}
+
+/* 07. 속성 선택자 */
+input[type="text"] {
+  background: lightgray;
+}
+input[placeholder] {
+  background: pink;
+}
+
+/* 08. 상태/반응 선택자 */
+.btn:hover {
+  background: yellow;
+}
+input:checked + label {
+  color: lightgreen;
+}
+input:focus {
+  background: lightblue;
+}
+.btn:disabled {
+  background: gray;
+}
+
+/* 09. 구조 선택자 */
+.list li:first-child {
+  background: yellow;
+}
+.list li:last-child {
+  background: pink;
+}
+.list li:nth-child(2) {
+  background: lightgreen;
+}
+.list li:nth-child(odd) {
+  color: navy;
+}
+/* odd : 홀수 번째 요소 선택, even : 짝수 번째 요소 선택 */
+
+/* 10. 가상 요소 선택자 */
+.badge::before {
+  content: "New ";
+  color: red;
+  background: yellow;
+}
+.badge::after {
+  content: " HOT";
+  color: white;
+  background: red;
+}
+
+/* 11. :is, :where */
+:is(header, footer) {
+  color: firebrick;
+}
+
+:where(header, footer) {
+  color: forestgreen;
+}

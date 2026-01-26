@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 선택자 {속성: 값;}    */
+      p {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="01-style-apply.css" />
+  </head>
+  <body>
+    <h1>CSS 연결 방식</h1>
+    <h2>inline style</h2>
+    <p style="color: green">태그에 직접 스타일을 적용</p>
+
+    <h2>internal style</h2>
+    <p>같은 페이지에서만 적용되는 스타일</p>
+
+    <h2>external style</h2>
+    <p class="external">HTML 밖의 CSS 파일을 연결하는 방식</p>
+
+    <h2>CSS가 왜 필요한가?</h2>
+    <p>
+      HTML은 구조, CSS는 스타일을 정의하는 데 사용. 구조와 스타일을 분리하면
+      유지보수와 재사용이 용이해짐.
+    </p>
+  </body>
+</html>
+<!-- 
+선택자 {속성: 값;}
+- 선택자 : 스타일을 적용할 HTML 요소를 지정
+- 속성 : 스타일의 종류 (예: color, font-size, margin 등)
+- 값 : 속성에 적용할 구체적인 스타일 값 (예: red, 16px, 10px 등)
+-->

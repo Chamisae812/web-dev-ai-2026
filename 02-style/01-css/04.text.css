@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family */
+.ff1 {
+  font-family: Arial, sans-serif;
+}
+.ff2 {
+  font-family: "Times New Roman", serif;
+}
+.ff3 {
+  font-family: "Bitcount Single";
+}
+
+/* font-size */
+.fs1 {
+  font-size: 20px;
+}
+.fs2 {
+  font-size: 2em;
+}
+/* 부모 사이즈가 30px -> 30*2 = 60px */
+.fs3 {
+  font-size: 2rem;
+}
+/* 웹사이트 기준 기본 사이즈가 16px -> 16px*2 = 32px */
+/*1 em, rem = 16px*/
+.fs4 {
+  font-size: 2vw;
+}
+/* 뷰포트 너비가 1000px -> 1000px*2/100 = 20px */
+.fs5 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* font-weight -숫자도 사용가능 */
+.fw1 {
+  font-weight: normal;
+}
+.fw2 {
+  font-weight: bold;
+}
+.fw3 {
+  font-weight: lighter;
+}
+
+/* line-height */
+.lh {
+  line-height: 2;
+}
+
+/* letter-spacing */
+.ls {
+  letter-spacing: 2.5px;
+}
+
+/* text-align */
+.ta1 {
+  text-align: left;
+}
+.ta2 {
+  text-align: center;
+}
+.ta3 {
+  text-align: right;
+}
+
+/* text-color */
+.c-name {
+  /* 웹사이트가 인식할 수 있는 색상명으로 텍스트 색상 지정(216 가지) */
+  color: navy;
+}
+.c-hex {
+  /* 16진수 색상 코드로 텍스트 색상 지정(#RRGGBB) */
+  color: #344459;
+}
+.c-rgb {
+  /* RGB로 텍스트 색상 지정 */
+  color: rgb(255, 64, 128);
+  background: rgba(0, 0, 0, 0.1);
+}
+.c-hsl {
+  /* HSL로 텍스트 색상 지정 (Hue, Saturation, Lightness) */
+  /* HSLA (Hue, Saturation, Lightness, Alpha) */
+  color: hsl(25, 50%, 75%);
+}
+
+/* text-decoration */
+.td1 {
+  text-decoration: underline;
+}
+.td2 {
+  text-decoration: none;
+}
+
+/* text-overflow */
+.to {
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

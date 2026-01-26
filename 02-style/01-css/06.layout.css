@@ -1,0 +1,67 @@
+.box {
+  background: lightblue;
+  border: 2px solid;
+  margin: 10px;
+}
+.fixed {
+  width: 200px;
+  height: 100px;
+}
+.parent {
+  height: 200px;
+  background: lightgray;
+  /* 부모 높이가 정해져 있지 않으면 %height는 작동하지 않음 */
+}
+.percent {
+  width: 75%;
+  height: 50%;
+}
+
+/* padding, margin */
+.space {
+  background: lightgreen;
+  border: 1px solid;
+  margin-bottom: 10px;
+}
+#padding1 {
+  padding: 20px;
+}
+#padding2 {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  /* top, right, bottom, left (4개일때) */
+  /* top, right/left, bottom (3개일때) */
+  /* top/bottom, right/left (2개일때) */
+}
+#margin1 {
+  margin: 20px;
+}
+#margin2 {
+  margin: 60px, 50px, 60px, 30px;
+}
+#margin3 {
+  width: 200px;
+  margin: auto;
+}
+
+/* border */
+.border {
+  background: #eeeeee;
+  width: 100px;
+  height: 100px;
+}
+/* 테두리 굵기, 스타일, 색상 */
+#border1 {
+  border: 5px solid red;
+  /* solid : 실선, dashed : 점선, dotted : 점선 */
+}
+#border2 {
+  border: 5px solid green;
+  border-radius: 15px;
+}
+#border3 {
+  border: 5px solid orange;
+  border-radius: 50%;
+}
