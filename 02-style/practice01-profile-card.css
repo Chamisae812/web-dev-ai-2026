@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(135deg, #ff7b00, #ff004c);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.border {
+  background: rgba(255, 255, 255, 0.15);
+  width: 350px;
+  height: 475px;
+  margin: 50px auto 10px auto;
+}
+#border-box {
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+}
+
+.ta1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+.ta2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.profile-image {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  margin: 30px auto 10px auto;
+}
+#p-image {
+  background-image: url(./assets/hui.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.Git-box {
+  width: 300px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 15px;
+  margin: 20px auto 0px auto;
+  align-items: center;
+  justify-content: center;
+}
+.GH {
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 60px;
+}
+.In-box {
+  width: 300px;
+  height: 60px;
+  border: #ffffff solid 2px;
+  border-radius: 15px;
+  margin: 20px auto 0px auto;
+  align-items: center;
+  justify-content: center;
+}
+.IN {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+}

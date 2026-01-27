@@ -65,3 +65,19 @@
   border: 5px solid orange;
   border-radius: 50%;
 }
+
+/* box-sizing */
+.box-sizing {
+  width: 300px;
+  height: 200px;
+  background: lightcoral;
+  margin: 10px;
+  border: solid 10px darkred;
+  padding: 20px;
+}
+.box-content {
+  box-sizing: content-box; /* 기본값(content-box는 width, height에 padding, border 포함하지 않음) */
+}
+.box-border {
+  box-sizing: border-box; /* width, height에 padding, border 포함 */
+}
