@@ -1,0 +1,101 @@
+.container {
+  background: gainsboro;
+  border: 1px solid #333;
+  display: flex;
+}
+.item {
+  background: white;
+  border: 2px solid #333;
+  padding: 1rem;
+  text-align: center;
+}
+/* flex-direction(부모한테 주셈) */
+.fd {
+  /* column: 세로, row: 가로(-reverse: 뒤에 붙이면 반대방향) */
+  flex-direction: column;
+}
+/* justify-content / align-items */
+.ja {
+  height: 200px;
+  /* flex-direction을 column으로 바꾸면 세로 정렬로 바뀜(justfy와 align의 역할도 바뀜) */
+  /* flex-start : 왼쪽 정렬, flex-end : 오른쪽 정렬, center : 가운데 정렬(flex 생략가능)
+  space-between : 양 끝 정렬, space-around : 균일 간격 정렬, space-evenly : 동일 간격 정렬 */
+  justify-content: space-between;
+  /* align-item은 상하 컨트롤(크기, 위치) */
+  align-items: stretch;
+}
+
+/* flex-wrap */
+.fw {
+  /* nowrap : 줄바꿈X, wrap : 줄바꿈O, wrap-reverse : 역방향 줄바꿈 */
+  height: 400px;
+  flex-wrap: wrap;
+  /* align-content는 상하로 여러 줄일 때 사용 */
+  align-content: space-between;
+}
+.fw .item {
+  width: 100px;
+  height: 100px;
+}
+
+/* align-self */
+.as {
+  height: 300px;
+}
+.as .self-start {
+  align-self: start;
+}
+.as .self-center {
+  align-self: center;
+}
+.as .self-end {
+  align-self: end;
+}
+
+/* order (순서를 바꾸는 친구 왼쪽 -, 기본0, 오른쪽+)*/
+.order1 {
+  order: 2;
+}
+.order3 {
+  order: -1;
+}
+
+/* gap : 아이템 사이 간격 */
+.gap {
+  gap: 20px;
+}
+
+/* flex-grow */
+.grow-1 {
+  flex-grow: 1;
+}
+.grow-2 {
+  flex-grow: 2;
+}
+.grow-3 {
+  flex-grow: 1;
+}
+
+/* flex-shrink */
+.shrink .item {
+  width: 200px;
+}
+.shrink-1 {
+  flex-shrink: 0;
+}
+.shrink-2 {
+  flex-shrink: 2;
+}
+
+/* flex-basis(width랑 다른건 없지만 shrink, grow랑 같이 씀) */
+.basis-1 {
+  flex-basis: 100px;
+}
+.basis-2 {
+  flex-basis: 200px;
+}
+.basis-3 {
+  /* flex ; grow, shrink, basis를 한번에 쓸때 */
+  /* flex 1 = 1 1 0이랑 같음 */
+  flex: 1;
+}

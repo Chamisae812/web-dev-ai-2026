@@ -24,7 +24,7 @@ body {
 .ta2 {
   text-align: center;
   color: #ffffff;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -35,10 +35,12 @@ body {
   border: 3px solid #ffffff;
   margin: 30px auto 10px auto;
 }
-#p-image {
-  background-image: url(./assets/hui.png);
-  background-size: cover;
-  background-position: center;
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
 }
 
 .Git-box {
@@ -46,11 +48,14 @@ body {
   height: 60px;
   background: #ffffff;
   border-radius: 15px;
-  margin: 20px auto 0px auto;
+  margin: 20px auto 15px auto;
   align-items: center;
   justify-content: center;
 }
 .GH {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #000000;
   font-weight: 600;
@@ -60,15 +65,18 @@ body {
 .In-box {
   width: 300px;
   height: 60px;
-  border: #ffffff solid 2px;
+  border: #ffffff solid 3px;
   border-radius: 15px;
   margin: 20px auto 0px auto;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 .IN {
+  margin: 0;
   text-align: center;
   color: #ffffff;
   font-weight: 600;
   font-size: 20px;
+  line-height: 60px;
 }
