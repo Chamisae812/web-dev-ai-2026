@@ -1,0 +1,81 @@
+.grid {
+  display: grid;
+  background: #eee;
+  gap: 10px;
+  padding: 10px;
+}
+.item {
+  background: rgb(82, 82, 170);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Grid-templete-columns / rows */
+.templete {
+  /* columns: 열 너비 */
+  grid-template-columns: 150px 300px 100px;
+  /* rows: 행 높이 */
+  grid-template-rows: 50px 100px;
+}
+.gap {
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(2, 80px);
+  row-gap: 30px; /* 행 간격 */
+  column-gap: 20px; /* 열 간격 */
+}
+.cr {
+  /* fr(fraction) : 남은 공간 비율 단위 */
+  grid-template-columns: repeat(3, 1fr);
+}
+.cr .column {
+  /* span 2 == 1 / 4 (1부터 3까지 늘리겠다.)*/
+  grid-column: 1 / 4;
+}
+.cr .row {
+  /* span 2 == 2 / 4 */
+  grid-row: span 2;
+}
+.area {
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(4, 50px);
+  grid-template-areas: "header header" "nav main" "nav section" "footer footer";
+  /* 한 줄씩 작성 */
+}
+.header {
+  grid-area: header;
+}
+.nav {
+  grid-area: nav;
+}
+.main {
+  grid-area: main;
+}
+.section {
+  grid-area: section;
+}
+.footer {
+  grid-area: footer;
+}
+.fit {
+  /* auto-fit : 공간에 맞춰 컬럼 갯수 자동 */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+.fill {
+  /* auto-fill : 빈칸 크기를 유지하면서 컬럼 갯수 유지 */
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+}
+.items {
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: 100px;
+  /* 밑에 얘들은 아이템 자체를 바꿈 */
+  align-items: center;
+  justify-items: start;
+}
+.content {
+  height: 300px;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 80px);
+  align-content: space-between;
+  justify-content: space-around;
+}
