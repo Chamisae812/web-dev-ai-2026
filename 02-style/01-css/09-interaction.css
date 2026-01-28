@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #eee;
+}
+.box {
+  width: 140px;
+  height: 140px;
+  background: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.transition {
+  transition: all 1s ease;
+}
+.transition:hover {
+  transform: scale(1.05);
+  background: orange;
+  color: black;
+}
+.scale {
+  background: indianred;
+}
+.scale:hover {
+  transform: scale(1.1);
+}
+.rotate {
+  background: indigo;
+}
+.rotate:hover {
+  transform: rotate(45deg);
+}
+.translate {
+  background: fuchsia;
+}
+.translate:hover {
+  transform: translateY(10px);
+}
+.skew:hover {
+  transform: skew(20deg, 20deg);
+}
+/* Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.ani-once {
+  animation: bounce 1.5s linear;
+}
+.ani-loop {
+  background: navy;
+  animation: bounce 1.5s linear infinite;
+}
+.ani-pause {
+  background: salmon;
+  animation: bounce 1s linear infinite;
+}
+.ani-pause:hover {
+  animation-play-state: paused;
+}
+.perspective {
+  perspective: 600px;
+}
+.p-3d {
+  background: seagreen;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.p-3d:hover {
+  transform: rotateY(180deg);
+}
