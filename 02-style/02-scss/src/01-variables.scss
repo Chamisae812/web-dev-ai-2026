@@ -1,0 +1,21 @@
+// :root {
+//   --main-color: #5d17ff;
+//   --text-color: #fff;
+//   --border-size: 5px;
+// }
+// button {
+//   background-color: var(--main-color);
+//   color: var(--text-color);
+//   border-radius: var(--border-size);
+//   border: none;
+// }
+/*scss변수*/
+$main-color: #6c5c92;
+$text-color: #fff;
+$border-size: 5px;
+button {
+  background-color: $main-color;
+  color: $text-color;
+  border-radius: $border-size;
+  border: none;
+}
