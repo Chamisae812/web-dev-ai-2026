@@ -1,0 +1,100 @@
+body {
+  background-color: lightblue;
+  color: rgb(236, 255, 61);
+}
+/* max-width: 최대 너비 기준 - 데스크탑 기준(큰 화면에서 부터 늘릴 때 */
+@media (max-width: 1000px) {
+  body {
+    /* 1000 이하 750 초과 */
+    color: rgb(255, 0, 0);
+  }
+}
+@media (max-width: 750px) {
+  /* 750 이하 */
+  body {
+    color: rgb(255, 85, 85);
+  }
+}
+/* min-width: 최소 너비 기준 - 모바일 기준(작은 화면에서 부터 늘릴 때) */
+@media (min-width: 750px) {
+  /* 750 이상 1000 미만 */
+  body {
+    background-color: lightseagreen;
+  }
+}
+@media (min-width: 1000px) {
+  /* 1000 이상 */
+  body {
+    background-color: lightcoral;
+  }
+}
+/* flex */
+.flex-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+.flex-container .item {
+  background: rgb(80, 80, 219);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+c .flex-container .item {
+  flex-grow: 1;
+}
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.grid-container .item {
+  background-color: beige;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+@media (min-width: 700px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1300px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* aspect-ratio */
+.ratio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+}
+.ratio-card {
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.ratio-card:first-child {
+  aspect-ratio: 16 / 9;
+}
+.ratio-card:nth-child(2) {
+  aspect-ratio: 4 / 3;
+}
+.ratio-card:last-child {
+  aspect-ratio: 1 / 1;
+}
