@@ -1,0 +1,57 @@
+@mixin btn($bg, $color) {
+  border: 2px dashed;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: $bg;
+  color: $color;
+}
+.success {
+  @include btn(green, white);
+}
+.warning {
+  @include btn(yellow, black);
+}
+.error {
+  @include btn(red, white);
+}
+
+@mixin smDevice {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin mdDevice {
+  @media (min-width: 760px) {
+    @content;
+  }
+}
+
+@mixin lgDevice {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin xlDevice {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+body {
+  @include smDevice {
+    background-color: blue;
+  }
+  @include mdDevice {
+    background-color: brown;
+  }
+  @include lgDevice {
+    background-color: purple;
+  }
+  @include xlDevice {
+    background-color: pink;
+  }
+}
