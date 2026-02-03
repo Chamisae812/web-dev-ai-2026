@@ -21,8 +21,9 @@
       <li>
         필기/실기 시험 모두 80점 이상이면 '합격', 아니면 '불합격'을 출력하시오.
         <script>
-          let score = 85;
-          if (score > 80) {
+          const exam1 = 80;
+          const exam2 = 75;
+          if (exam1 > 80 && exam2 > 80) {
             console.log("합격");
           } else {
             console.log("불합격");
@@ -34,7 +35,7 @@
         정수가 10과 20 사이인지 판별하시오.
         <script>
           let jungsu = 30;
-          if (jungsu < 20 && jungsu > 10) {
+          if (10 < jungsu && jungsu < 20) {
             console.log("ㅇㅇ");
           } else {
             console.log("ㄴㄴ");
@@ -59,7 +60,7 @@
         월을 입력받아 계절을 출력하시오. (3~5: 봄, 6~8: 여름, 9~11: 가을, 12~2:
         겨울)
         <script>
-          //const month = prompt("지금이 몇 월 입니까?");
+          //const month = number(prompt("지금이 몇 월 입니까?"));
           let month = 2;
           if (month >= 3 && month <= 5) {
             console.log("따뜻한 봄이네예");
@@ -67,7 +68,7 @@
             console.log("뒤지게 더운 여름이여");
           } else if (month >= 9 && month <= 11) {
             console.log("가을 타나봐유");
-          } else {
+          } else if (month == 12 || month == 1 || month == 2) {
             console.log("얼어 뒤질 겨울ㄷㄷ");
           }
         </script>
@@ -192,7 +193,10 @@
       <li>
         4자리 정수가 주어졌을 때, 첫 번째 자리수가 짝수인지 홀수인지 판별하시오.
         <script>
-          let num4 = 7362;
+          let num4 = 2026;
+          const first = parseInt(num4 / 1000);
+          if (first % 2 === 0) console.log("짝수");
+          else console.log("홀수");
         </script>
       </li>
     </ol>
