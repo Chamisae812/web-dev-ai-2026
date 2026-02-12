@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./practice09-event.js" defer></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 150px;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        margin-bottom: 25px;
+      }
+      .ibox {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: cadetblue;
+      }
+      #click {
+        background-color: burlywood;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 15px 5px;
+        cursor: pointer;
+      }
+      #restart {
+        background-color: skyblue;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 15px 5px;
+        cursor: pointer;
+      }
+      #Result {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>그림 맞추기</h1>
+    <p>버튼을 클릭하시면, 그림이 출력됩니다. 모두 같은 그림이 나오면 승리!</p>
+    <div class="container">
+      <div class="ibox"></div>
+      <div class="ibox"></div>
+      <div class="ibox"></div>
+    </div>
+    <div>
+      <button id="click">Click</button>
+      <button id="restart">Restart</button>
+    </div>
+    <p id="Result"></p>
+  </body>
+</html>
