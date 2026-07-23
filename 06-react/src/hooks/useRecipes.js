@@ -5,6 +5,10 @@ import { getRecipes } from "../api/recipes.js";
 export const useRecipes = (keyword) => {
   const sentinelRef = useRef(null);
 
+/*
+
+*/
+
   const query = useInfiniteQuery({
     queryKey: ["recipes", keyword],
     queryFn: ({ pageParam }) => getRecipes(keyword, pageParam),
